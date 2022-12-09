@@ -122,7 +122,6 @@ function App() {
     setEmployees(transformedEmployees);
 
   }
-
   return (
     <Router>
       <Nav/>
@@ -136,7 +135,6 @@ function App() {
             handleEmployeeCardClick={handleEmployeeCardClick}
             handleTeamSelectionChange={handleTeamSelectionChange}
           />}>
-
         </Route>
         <Route path="/GroupedTeamMembers" element={<GroupedTeamMembers employees={employees}
           selectedTeam={selectedTeam} setTeam={setTeam} />}>

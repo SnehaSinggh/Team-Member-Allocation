@@ -24,9 +24,7 @@ const GroupedTeamMembers = ({ employees, selectedTeam, setTeam }) => {
     teams.push(teamD);
 
     return teams;
-
   }
-
   function handleTeamClick(event) {
     var transformedGroupData = groupedEmployees.map((groupedData) => groupedData.team === event.currentTarget.id
       ? { ...groupedData, collapsed: !groupedData.collapsed }
@@ -60,13 +58,12 @@ const GroupedTeamMembers = ({ employees, selectedTeam, setTeam }) => {
                   })
                 }
               </div>
-              <hr />
+              <hr/>
             </div>
           );
         })
       }
     </main>
   )
-
 }
 export default GroupedTeamMembers
